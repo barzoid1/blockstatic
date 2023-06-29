@@ -6,33 +6,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;600;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>BlockStatic</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container px-5">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="bx bx-menu menu-icon"></span>
-          </button>
+  <div id="loader">
+
+  </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/image 3.png" alt="" class="me-3">Blockstatic</a>
+          
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bx bx-menu menu-icon"></span>
+            </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item">
+                <a class="nav-link">
                  Documentations
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another</a></li>
-                  <li><a class="dropdown-item" href="#">Something</a></li>
-                </ul>
               </li>
               <button class="nav-button">Login</button>
             </ul>
@@ -42,58 +44,285 @@
 <!-- end of nav -->
 
 <section id="intro">
-  <div class="container px-5 ">
-    <div class="intro-flex">
-      <div>
-        <h1>Reliable APIs For A
+  <div class="container">
+    <div class="row intro-flex">
+      <div class="col-lg-6 col-md-6 order-lg-0 order-1 order-md-1" >
+        <h1 data-aos="slide-right" data-aos-duration="3000" >Reliable APIs For A
           Seamless Blockchain
           Experience</h1>
-          <p>BlockStatic delivers precision-engineered, robust API solutions, meticulously designed to decode the complexities of blockchain technology.</p>
-        <button data-bs-toggle="modal" data-bs-target="">Get an API Key Now</button>
+          <p class="mt-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1000">BlockStatic delivers precision-engineered, robust API solutions, meticulously designed to decode the complexities of blockchain technology.</p>
+        <button id="intro-btn" class="mt-3"  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">Get an API Key Now</button>
       </div>
-      <div class="intro-img-con">
-        <div class="intro-img "><img src="assets/Frame 1000011725.png" alt="" class="img-fluid w-75 d-none d-md-block"></div>
+      <div class=" col-lg-6 col-md-6 order-lg-1 order-0 order-md-0 intro-right" data-aos="slide-left" data-aos-duration="3000" data-aos-delay="1000">
+        <div class="intro-img">
+          <code>
+              <span>{</span> "<strong>name</strong>":"BNB TOKEN",<br> "<strong>symbol</strong>":"BNB", <br> "<strong>total_supply</strong>":"1000000000000000", <br> "<strong>holders</strong>":"282206", <br> "<strong>decimals</strong>":"18", <br> "<strong>circ_supply</strong>":"155851725",<br> "<strong>total_transactions</strong>":"1053722" <span>}</span>
+          </code>
             </div>
       </div>
   </div>
 </section>
 <section id="features" class="py-5">
-  <div class="container px-5">
-    <div class="features-grid">
-      <div class="features-child">
-        <div><img src="assets/pc.png" class="img-fluid w-50" alt=""></div>
-        <div>
-          <h3>Precision Engineering</h3><p class="features-child-p">At BlockStatic, our APIs are meticulously crafted, ensuring accuracy, reliability, and top-tier performance. You can trust our technology to perform consistently, making your blockchain operations run smoothly.</p>
-        </div>
-        <div class="child-card">
-          <div class="card-p"><img src="assets/check.svg" alt=""><p>Optimal Performance</p></div>
-          <div class="card-p"><img src="assets/check.svg" alt=""><p>Reliable Operation</p></div>
-          <div class="card-p"><img src="assets/check.svg" alt=""><p class="mb-0">Enhanced accuracy</p></div>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="service-box-out">
+            <div class="service-box " data-aos="fade-down" data-aos-duration="1000" > 
+              <div class="row box-content">
+                <div class="col-lg-6 col-md-6">
+                  <div class="first-half">
+                    
+                      <img src="assets/pc.png" alt="">
+                      <div>
+                      <h3>Precision Engineering</h3>
+                      <p>At BlockStatic, our APIs are meticulously crafted, ensuring accuracy, reliability, and top-tier performance. You can trust our technology to perform consistently, making your blockchain operations run smoothly.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="second-half">
+                      <ul>
+                        <li><img src="assets/check.svg" alt="" class="me-2">Optimal Performance</li>
+                        <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Reliable Operations</li>
+                        <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Enhanced Accuracy</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="service-box"  data-aos="fade-down" data-aos-duration="1000"> 
+                <div class="row box-content">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="first-half">
+                      
+                        <img src="assets/bulb.png" alt="">
+                        <div>
+                        <h3>Future-Proof Solutions</h3>
+                        <p>Our services are designed to withstand the test of time and technological advancements. We provide future-proof APIs that adapt to the ever-evolving blockchain landscape, allowing your business to stay relevant & competitive.</p>
+                                            </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-4">
+                      <div class="second-half">
+                        <ul>
+                          <li><img src="assets/check.svg" alt="" class="me-2">Technological Adaptability</li>
+                          <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Industry Competitiveness</li>
+                          <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Frequent Updates</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-box"  data-aos="fade-down" data-aos-duration="1000"> 
+                  <div class="row box-content">
+                    <div class="col-lg-6 col-md-6">
+                      <div class="first-half">
+                        <img src="assets/upload.png" alt="">
+                        <div>
+                          <h3>Customer Focused</h3>
+                          <p>Your needs are our priority. We don't believe in a one-size-fits-all approach, but instead, provide personalized services tailored to your unique requirements. With BlockStatic, you get a solution that's custom-fit for your business.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="second-half">
+                          <ul>
+                            <li><img src="assets/check.svg" alt="" class="me-2">Tailored Services</li>
+                            <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Flexible Solutions</li>
+                            <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Dedicated Support</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
         </div>
       </div>
-      <div class="features-child">
-        ]<div><img src="assets/bulb.png" class="img-fluid w-50" alt=""></div>
-        <div>
-          <h3>Future-Proof Solutions</h3><p class="features-child-p">Our services are designed to withstand the test of time and technological advancements. We provide future-proof APIs that adapt to the ever-evolving blockchain landscape, allowing your business to stay relevant & competitive.</p>
+</section>
+<!-- endpoints section -->
+<section class="py-5" id="endpoints">
+  <div class="container">
+      <h2 class="text-center">Our API Endpoints</h2>
+      <div class="text-center">
+        <p>Comprehensive data on tokens for Ethereum (ETH) and Binance Smart Chain (BSC) Tokens</p>
+      </div>
+      <div class="row row-gap-2">
+        <div class="col-lg-6 col-md-6 h-100"  data-aos="slide-left" data-aos-duration="1000">
+          <div class="first-half-ep h-100">
+            <img src="assets/Group 1000011729 (1).png" alt="">
+            <div>
+              <h3>Token Data</h3>
+              <p>Comprehensive data on tokens for Ethereum (ETH) and Binance Smart Chain (BSC) Tokens</p>
+            </div>
+          </div>
         </div>
-        <div class="child-card">
-          <div class="card-p"><img src="assets/check.svg" alt=""><p>Technological Adaptability</p></div>
-          <div class="card-p"><img src="assets/check.svg" alt=""><p>Industry Competitivenes</p></div>
-          <div class="card-p"><img src="assets/check.svg" alt=""><p class="mb-0">Frequent Updates</p></div>
+
+        <div class="col-lg-6 col-md-6" data-aos="slide-right" data-aos-duration="1000">
+          <div class="first-half-ep h-100">
+            <img src="assets/Group 1000011729 (2).png" alt="">
+            <div>
+              <h3>New-Token Alert</h3>
+              <p>Get immediately notified of newly created tokens and integrate capability this into your platform.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6" data-aos="slide-left" data-aos-duration="3000">
+          <div class="first-half-ep h-100">
+            <img src="assets/Group 1000011729 (3).png" alt="">
+            <div>
+              <h3>Low Latency</h3>
+              <p>Benefit from lightning-fast data retrieval, enabling real-time interactions with your blockchain operations.</p>
+            </div>
+          </div>
+      </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="slide-right" data-aos-duration="3000">
+            <div class="first-half-ep h-100">
+              <img src="assets/Group 1000011729 (4).png" alt="">
+              <div>
+                <h3>High reliability</h3>
+                <p>Engineered to ensure consistent and reliable access, ideal for mission-critical operations.</p>
+              </div>
+            </div>
+        </div>
+
+
+              <div class="col-lg-6 col-md-6" data-aos="slide-left" data-aos-duration="3000">
+                <div class="first-half-ep h-100">
+                  <img src="assets/Group 1000011729 (5).png" alt="">
+                  <div>
+                    <h3>Adoptable Solutions</h3>
+                    <p>Engineered to ensure consistent and reliable access, ideal for mission-critical operations.</p>
+                  </div>
+                </div>
+        </div>
+  
+          <div class="col-lg-6 col-md-6"data-aos="slide-right" data-aos-duration="3000">
+            <div class="first-half-ep h-100">
+              <img src="assets/Group 1000011729.png" alt="">
+              <div>
+                <h3>Customer Focused</h3>
+                <p>We prioritize your needs, providing dedicated customer support to resolve issues and optimize your experience with our services.</p>
+              </div>
+            </div>
         </div>
       </div>
-      <div class="features-child">
-        <div><img src="assets/upload.png" class="img-fluid w-50" alt=""></div>
-        <div><h3>Customer Focused</h3><p class="features-child-p">Your needs are our priority. We don't believe in a one-size-fits-all approach, but instead, provide personalized services tailored to your unique requirements. With BlockStatic, you get a solution that's custom-fit for your business.</p>
+  </div>
+</section>
+
+<!-- price section -->
+<section id="pricing" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Our API Endpoints</h2>
+      <div class="text-center">
+        <p style="color: #454F5E;" data-aos="fade-down" data-aos-duration="2000">Unlock the full potential of blockchain with our competitively priced packages. Whether you're a startup  or an established enterprise, we have a plan designed to meet your unique needs. Explore our pricing  options and choose the one that's right for your business.</p>
       </div>
-      <div class="child-card">
-        <div class="card-p"><img src="assets/check.svg" alt=""><p>Tailored Services</p></div>
-        <div class="card-p"><img src="assets/check.svg" alt=""><p>Flexible Solutions</p></div>
-        <div class="card-p"><img src="assets/check.svg" alt=""><p class="mb-0">Dedicated Support</p></div>
+      <div class="card-group mt-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-body" data-aos="fade" data-aos-duration="3000">
+              <div class="card-title">
+                <span class="title-card">
+                  PIONEER
+                </span>
+                <h2>$29<span style="color: #5B708F; font-size: .9rem; font-weight: 600;">/MO</span></h2>
+              </div>
+              <ul>
+                <li><img src="assets/check.svg" alt="" class="me-2">Up to 50,000 API calls/day</li>
+                <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">1 API call/second limit</li>
+                <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Access to <b>PRO+</b> endpoints</li>
+              </ul>
+              <button class="card-button"  style=" margin-top: 5.3rem;">Get Started</button>
+            </div>
+        </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100">
+            <div class="card-body" data-aos="fade" data-aos-duration="3000">
+              <div class="card-title">
+                <span class="title-card">
+                  ADVANCED
+                </span>
+                <h2>$79<span style="color: #5B708F; font-size: .9rem; font-weight: 600;">/MO</span></h2>
+              </div>
+              <ul>
+                <li><img src="assets/check.svg" alt="" class="me-2">Access to <b>PRO+</b> endpoints</li>
+                <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">10 API calls/second limit</li>
+                <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Up to 200,000 API calls/day</li>
+                <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Priority support</li>
+              </ul>
+              <button class="card-button mt-5">Get Started</button>
+            </div>
+                </div>
+        </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+          <div class="card-body" data-aos="fade" data-aos-duration="3000">
+            <div class="card-title">
+              <span class="title-card">
+                PROFESSIONAL
+              </span>
+              <h2>$249<span style="color: #5B708F; font-size: .9rem; font-weight: 600;">/MO</span></h2>
+            </div>
+            <ul>
+              <li><img src="assets/check.svg" alt="" class="me-2">Access to <b>PRO+</b> endpoints/li>
+              <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">30 API calls/second limit</li>
+              <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Up to 1,000,000 API calls/day</li>
+              <li class="mt-3"><img src="assets/check.svg" alt="" class="me-2">Priority support</li>
+            </ul>
+            <button class="card-button mt-5">Get Started</button>
+          </div>
+          </div>
+      </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100" style="background: #050D0A;">
+            <div class="card-body" data-aos="fade" data-aos-duration="3000">
+              <div class="card-title">
+                <span class="title-card">
+                  ENTERPRISE
+                 </span>
+              </div>
+              <p class="card-text">
+                Custom solution with
+          greater rate limits
+          available. SLA available for
+          enterprise clients.
+              </p>
+              <button class="card-button" style="box-shadow: none; background-color: #169661; margin-top: 5.5rem;">Contact Us</button>
+            </div>
+                </div>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="contact pt-5">
+  <div class="container">
+    <div class="contact-div row" data-aos="slide-up" data-aos-duration="3000">
+      <div class=" col-lg-5 order-2 order-lg-0 text-center text-lg-start">
+        <p>Copyright Blockstatic © 2023. All rights reserved.</p>
+      </div>
+      <div style="color: #00D77E; font-size: 1.3rem; margin-bottom: 1rem;" class="d-flex column-gap-3 column-gap-lg-4 align-items-center justify-content-center col-lg-3 order-0 order-lg-1">
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-telegram"></i>
+      </div>
+      <div class="d-flex flex-column flex-lg-row align-items-center gap-0 column-gap-lg-3 justify-content-center col-lg-4 order-1 order-lg-2">
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
       </div>
     </div>
   </div>
 </section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once:true
+  });
+</script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
