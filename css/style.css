@@ -305,11 +305,8 @@ line-height: normal;
     background: #F1F6F4;
 }
 .contact-div{
-    width: 
-    99%;
     padding: 3rem;
     background-color: #fff;
-    margin: 0 auto;
 }
     /* mobile */
 @media screen and (min-width:320px) and (max-width:767px) {
